@@ -1,0 +1,2 @@
+com/pemrogramanandroid/clickrush/BuildConfig.java
+ com.pemrogramanandroid.clickrush.BuildConfig

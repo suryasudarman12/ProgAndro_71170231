@@ -1,0 +1,84 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.pemrogramanandroid.clickrush"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="27"
+8-->E:\Semester 11\UG_71170231\Clickrush3\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="33" />
+9-->E:\Semester 11\UG_71170231\Clickrush3\app\src\main\AndroidManifest.xml
+10
+11    <permission
+11-->[androidx.core:core:1.9.0] C:\Users\ASUS\.gradle\caches\transforms-3\2b101e020ab3b415c9c5575f61364468\transformed\core-1.9.0\AndroidManifest.xml:22:5-24:47
+12        android:name="com.pemrogramanandroid.clickrush.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+12-->[androidx.core:core:1.9.0] C:\Users\ASUS\.gradle\caches\transforms-3\2b101e020ab3b415c9c5575f61364468\transformed\core-1.9.0\AndroidManifest.xml:23:9-81
+13        android:protectionLevel="signature" />
+13-->[androidx.core:core:1.9.0] C:\Users\ASUS\.gradle\caches\transforms-3\2b101e020ab3b415c9c5575f61364468\transformed\core-1.9.0\AndroidManifest.xml:24:9-44
+14
+15    <uses-permission android:name="com.pemrogramanandroid.clickrush.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+15-->[androidx.core:core:1.9.0] C:\Users\ASUS\.gradle\caches\transforms-3\2b101e020ab3b415c9c5575f61364468\transformed\core-1.9.0\AndroidManifest.xml:26:5-97
+15-->[androidx.core:core:1.9.0] C:\Users\ASUS\.gradle\caches\transforms-3\2b101e020ab3b415c9c5575f61364468\transformed\core-1.9.0\AndroidManifest.xml:26:22-94
+16
+17    <application
+17-->E:\Semester 11\UG_71170231\Clickrush3\app\src\main\AndroidManifest.xml:5:5-21:19
+18        android:allowBackup="true"
+18-->E:\Semester 11\UG_71170231\Clickrush3\app\src\main\AndroidManifest.xml:6:13-39
+19        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+19-->[androidx.core:core:1.9.0] C:\Users\ASUS\.gradle\caches\transforms-3\2b101e020ab3b415c9c5575f61364468\transformed\core-1.9.0\AndroidManifest.xml:28:18-86
+20        android:debuggable="true"
+21        android:extractNativeLibs="false"
+22        android:icon="@mipmap/ic_launcher"
+22-->E:\Semester 11\UG_71170231\Clickrush3\app\src\main\AndroidManifest.xml:7:13-47
+23        android:label="@string/app_name"
+23-->E:\Semester 11\UG_71170231\Clickrush3\app\src\main\AndroidManifest.xml:8:13-45
+24        android:roundIcon="@mipmap/ic_launcher_round"
+24-->E:\Semester 11\UG_71170231\Clickrush3\app\src\main\AndroidManifest.xml:9:13-58
+25        android:supportsRtl="true"
+25-->E:\Semester 11\UG_71170231\Clickrush3\app\src\main\AndroidManifest.xml:10:13-39
+26        android:testOnly="true"
+27        android:theme="@style/Theme.Clickrush" >
+27-->E:\Semester 11\UG_71170231\Clickrush3\app\src\main\AndroidManifest.xml:11:13-51
+28        <activity
+28-->E:\Semester 11\UG_71170231\Clickrush3\app\src\main\AndroidManifest.xml:12:9-20:20
+29            android:name="com.pemrogramanandroid.clickrush.MainActivity"
+29-->E:\Semester 11\UG_71170231\Clickrush3\app\src\main\AndroidManifest.xml:13:17-45
+30            android:exported="true" >
+30-->E:\Semester 11\UG_71170231\Clickrush3\app\src\main\AndroidManifest.xml:14:17-40
+31            <intent-filter>
+31-->E:\Semester 11\UG_71170231\Clickrush3\app\src\main\AndroidManifest.xml:15:13-19:29
+32                <action android:name="android.intent.action.MAIN" />
+32-->E:\Semester 11\UG_71170231\Clickrush3\app\src\main\AndroidManifest.xml:16:17-68
+32-->E:\Semester 11\UG_71170231\Clickrush3\app\src\main\AndroidManifest.xml:16:25-66
+33
+34                <category android:name="android.intent.category.LAUNCHER" />
+34-->E:\Semester 11\UG_71170231\Clickrush3\app\src\main\AndroidManifest.xml:18:17-76
+34-->E:\Semester 11\UG_71170231\Clickrush3\app\src\main\AndroidManifest.xml:18:27-74
+35            </intent-filter>
+36        </activity>
+37
+38        <provider
+38-->[androidx.emoji2:emoji2:1.0.0] C:\Users\ASUS\.gradle\caches\transforms-3\942aa8c3ef8e987fd2e07064662e15ef\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:26:9-34:20
+39            android:name="androidx.startup.InitializationProvider"
+39-->[androidx.emoji2:emoji2:1.0.0] C:\Users\ASUS\.gradle\caches\transforms-3\942aa8c3ef8e987fd2e07064662e15ef\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:27:13-67
+40            android:authorities="com.pemrogramanandroid.clickrush.androidx-startup"
+40-->[androidx.emoji2:emoji2:1.0.0] C:\Users\ASUS\.gradle\caches\transforms-3\942aa8c3ef8e987fd2e07064662e15ef\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:28:13-68
+41            android:exported="false" >
+41-->[androidx.emoji2:emoji2:1.0.0] C:\Users\ASUS\.gradle\caches\transforms-3\942aa8c3ef8e987fd2e07064662e15ef\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:29:13-37
+42            <meta-data
+42-->[androidx.emoji2:emoji2:1.0.0] C:\Users\ASUS\.gradle\caches\transforms-3\942aa8c3ef8e987fd2e07064662e15ef\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:31:13-33:52
+43                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+43-->[androidx.emoji2:emoji2:1.0.0] C:\Users\ASUS\.gradle\caches\transforms-3\942aa8c3ef8e987fd2e07064662e15ef\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:32:17-75
+44                android:value="androidx.startup" />
+44-->[androidx.emoji2:emoji2:1.0.0] C:\Users\ASUS\.gradle\caches\transforms-3\942aa8c3ef8e987fd2e07064662e15ef\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:33:17-49
+45            <meta-data
+45-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\ASUS\.gradle\caches\transforms-3\81d8ea267ac5ed1e51d53e241512a1f7\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:31:13-33:52
+46                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+46-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\ASUS\.gradle\caches\transforms-3\81d8ea267ac5ed1e51d53e241512a1f7\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:32:17-78
+47                android:value="androidx.startup" />
+47-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\ASUS\.gradle\caches\transforms-3\81d8ea267ac5ed1e51d53e241512a1f7\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:33:17-49
+48        </provider>
+49    </application>
+50
+51</manifest>
