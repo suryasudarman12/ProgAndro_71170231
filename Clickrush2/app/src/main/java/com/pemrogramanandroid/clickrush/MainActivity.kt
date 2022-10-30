@@ -23,7 +23,10 @@ class MainActivity : AppCompatActivity() {
         val button: Button = findViewById(R.id.btn_tap)
 
         button.setOnClickListener {
-        score++
+            val animation = AnimationUtils.loadAnimation(this, R.anim.bounce)
+            button.startAnimation(animation)
+            score++
+
             var textview: TextView = findViewById(R.id.score_view) as TextView
             textview.text = "Your Score : $score"
 
