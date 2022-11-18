@@ -1,6 +1,7 @@
 package com.pemrogramanandroid.catatantempat.viewmodel
 
 import android.app.Application
+import android.content.Context
 import android.graphics.Bitmap
 import android.util.Log
 import androidx.lifecycle.AndroidViewModel
@@ -10,12 +11,14 @@ import com.google.android.gms.maps.model.LatLng
 import com.google.android.libraries.places.api.model.Place
 import com.pemrogramanandroid.catatantempat.model.Bookmark
 import com.pemrogramanandroid.catatantempat.repository.BookmarkRepo
+import com.pemrogramanandroid.catatantempat.util.imageUtil
 
-class MapsViewModel (application: Application): AndroidViewModel(application){
+class MapsViewModel (application: Application): AndroidViewModel(application) {
     private val TAG = "MapsViewModel"
 
     private var bookmarkRepo: BookmarkRepo = BookmarkRepo(
-        getApplication())
+        getApplication()
+    )
     private var bookmarks: LiveData<List<BookmarkMarkerView>>? = null
 
     fun addBookmarkFromPlace(place: Place, image: Bitmap?) {
@@ -30,6 +33,8 @@ class MapsViewModel (application: Application): AndroidViewModel(application){
 
         val newId = bookmarkRepo.addBookmark(bookmark)
         Log.i(TAG, "New bookmark $newId added to the database.")
+
+        image?.let { bookmark.setImage(it, getApplication()) }
     }
 
     fun getBookmarkMarkerViews():
@@ -51,12 +56,19 @@ class MapsViewModel (application: Application): AndroidViewModel(application){
     private fun bookmarkToMarkerView(bookmark: Bookmark) = BookmarkMarkerView(
         bookmark.id,
         bookmark.name,
+        bookmark.phone,
         LatLng(bookmark.latitude, bookmark.longitude)
     )
 
     data class BookmarkMarkerView(
         var id: Long? = null,
         var name: String? = null,
-        var location: LatLng = LatLng(0.0, 0.0)
-    )
+        var phone: String = "",
+        var location: LatLng = LatLng(0.0, 0.0),
+    ) {
+
+        fun getImage(context: Context)=id?.let {
+            imageUtil.LoadBitmapFromfile(context, Bookmark.generateImageFileName(it))
+        }
+    }
 }
